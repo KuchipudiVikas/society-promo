@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.gradient-text {
+  background: linear-gradient(326deg, #222f3d, #dde6e8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
