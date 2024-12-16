@@ -66,31 +66,51 @@ export default function Home() {
               The Social Media Revolution Is Coming!{" "}
             </span>
           </div>
-          <div className="text-[18px] font-medium text-center">
-            👩‍🎤 MySpace-Era Profiles, Your Way Personalize your vibe without
-            needing HTML. Glitter gifs? Playlists? Done{" "}
+          <div className="text-[16px] font-medium text-center">
+            <h1 className="text-[24px] mb-1 font-semibold">
+              👩‍🎤 Fully Customizable Profiles
+            </h1>
+            MySpace-Era profiles. Full customization without HTML, Music
+            Playlists, Top friends, and lots more.
           </div>
-          <div className="text-[18px] font-medium text-center">
-            👥 Communities That Get You Find groups you love—no trolls, no
-            drama, just real connections. Monetize your groups, with built-in
-            shops, courses, blogs, calendars, and more!{" "}
+          <div className="text-[16px] font-medium text-center">
+            <h1 className="text-[24px] mb-1 font-semibold">
+              {" "}
+              👥 Communities That Get You
+            </h1>{" "}
+            Find groups you love—no trolls, no drama, just real connections.
+            Monetize your groups, with built-in shops, courses, blogs,
+            calendars, and more!{" "}
           </div>
-          <div className="text-[18px] font-medium text-center">
-            🎥 Short Videos Vine vibes meet creativity. Post real life videos,
-            skits, ideas, tutorials or just your cat being awesome.{" "}
+          <div className="text-[16px] font-medium text-center">
+            <h1 className="text-[24px] mb-1 font-semibold">
+              {" "}
+              🎥 Short Videos Vine vibes meet creativity.
+            </h1>
+            Post real life videos, skits, ideas, tutorials or just your cat
+            being awesome.{" "}
           </div>
-          <div className="text-[18px] font-medium text-center">
-            🛍️ Sell, Create, Thrive A digital marketplace cooler than Etsy or
-            Gumroad, a freelancer section like Fiverr, and a course marketplace
-            like Udemy—without the outrageous fees.{" "}
+          <div className="text-[16px] font-medium text-center">
+            <h1 className="text-[24px] mb-1 font-semibold">
+              🛍️ Sell, Create, Thrive{" "}
+            </h1>{" "}
+            A digital marketplace cooler than Etsy or Gumroad, a freelancer
+            section like Fiverr, and a course marketplace like Udemy—without the
+            outrageous fees.{" "}
           </div>
-          <div className="text-[18px] font-medium text-center">
-            🙅‍♂️ Just the Good Stuff No mind-reading algorithms, no selling your
-            info. Your data stays yours—always. 🚀{" "}
+          <div className="text-[16px] font-medium text-center">
+            <h1 className="text-[24px] mb-1 font-semibold">
+              🙅‍♂️ Just the Good Stuff{" "}
+            </h1>{" "}
+            No mind-reading algorithms, no selling your info. Your data stays
+            yours—always. 🚀{" "}
           </div>
-          <div className="text-[18px] font-medium text-center">
-            Don’t Miss Out! We’re launching soon. Be there from Day 1! 👉 Join
-            the Waitlist Now
+
+          <div className="text-[16px] font-medium  text-center">
+            <h1 className="text-[24px] mb-1 font-semibold">
+              Don’t Miss Out! We’re launching soon.{" "}
+            </h1>{" "}
+            Be there from Day 1! 👉 Join the Waitlist Now
           </div>
 
           <div className="flex gap-5 mt-10">
