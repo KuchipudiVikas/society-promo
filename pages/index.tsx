@@ -1,16 +1,5 @@
 import { useEffect, useRef } from "react";
 import Hls from "hls.js";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -119,8 +108,13 @@ export default function Home() {
     </div>
   );
 }
-// @ts-ignore
-function Section({ title, description }) {
+function Section({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
   return (
     <div className="text-center">
       <h2 className="text-[20px] sm:text-[24px] font-semibold">{title}</h2>
