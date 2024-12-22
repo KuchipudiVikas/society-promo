@@ -39,11 +39,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} relative min-h-screen`}
-    >
+    <div className="relative min-h-screen overflow-hidden bg-black text-white">
       {/* Video Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="fixed inset-0">
         <video
           ref={videoRef}
           autoPlay
@@ -55,94 +53,78 @@ export default function Home() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10   mx-auto justify-center my-auto items-center flex flex-col  max-w-[1300px]  p-24 h-screen text-white">
-        <div className="flex flex-col items-center p-10 rounded-3xl gap-7 bg-gray-500/20">
-          <div className="text-[100px] gradient-text font-extrabold">
-            Society
+      <div className="relative z-10 flex flex-col items-center justify-center mx-auto h-screen p-4 sm:p-10 lg:max-w-[1300px]">
+        <div className="flex flex-col items-center p-6 sm:p-10 rounded-3xl gap-7 bg-gray-500/20">
+          {/* Society Heading */}
+          <div className="gradient-text font-extrabold text-center">
+            <h1 className="text-[60px] sm:text-[80px] lg:text-[100px] leading-tight sm:leading-[1.2]">
+              Society
+            </h1>
           </div>
-          <div className="text-[45px] font-bold text-center">
-            <span className="">🎉</span>{" "}
+          {/* Subtitle */}
+          <div className="text-[25px] sm:text-[35px] font-bold text-center">
+            <span>🎉</span>{" "}
             <span className="gradient-white">
-              The Social Media Revolution Is Coming!{" "}
+              The Social Media Revolution Is Coming!
             </span>
           </div>
-          <div className="text-[16px] font-medium text-center">
-            <h1 className="text-[24px] mb-1 font-semibold">
-              👩‍🎤 Fully Customizable Profiles
+          {/* Sections */}
+          <div className="flex flex-col gap-4">
+            <Section
+              title="👩‍🎤 Fully Customizable Profiles"
+              description="MySpace-Era profiles. Full customization without HTML, Music Playlists, Top friends, and lots more."
+            />
+            <Section
+              title="👥 Communities That Get You"
+              description="Find groups you love—no trolls, no drama, just real connections. Monetize your groups, with built-in shops, courses, blogs, calendars, and more!"
+            />
+            <Section
+              title="🎥 Short Videos Vine vibes meet creativity"
+              description="Post real-life videos, skits, ideas, tutorials, or just your cat being awesome."
+            />
+            <Section
+              title="🛍️ Sell, Create, Thrive"
+              description="A digital marketplace cooler than Etsy or Gumroad, a freelancer section like Fiverr, and a course marketplace like Udemy—without the outrageous fees."
+            />
+            <Section
+              title="🙅‍♂️ Just the Good Stuff"
+              description="No mind-reading algorithms, no selling your info. Your data stays yours—always. 🚀"
+            />
+          </div>
+          {/* Call to Action */}
+          <div className="text-center">
+            <h1 className="text-[20px] sm:text-[24px] mb-3 font-semibold">
+              Don’t Miss Out! We’re launching soon.
             </h1>
-            MySpace-Era profiles. Full customization without HTML, Music
-            Playlists, Top friends, and lots more.
+            <p>Be there from Day 1! 👉 Join the Waitlist Now</p>
           </div>
-          <div className="text-[16px] font-medium text-center">
-            <h1 className="text-[24px] mb-1 font-semibold">
-              {" "}
-              👥 Communities That Get You
-            </h1>{" "}
-            Find groups you love—no trolls, no drama, just real connections.
-            Monetize your groups, with built-in shops, courses, blogs,
-            calendars, and more!{" "}
-          </div>
-          <div className="text-[16px] font-medium text-center">
-            <h1 className="text-[24px] mb-1 font-semibold">
-              {" "}
-              🎥 Short Videos Vine vibes meet creativity.
-            </h1>
-            Post real life videos, skits, ideas, tutorials or just your cat
-            being awesome.{" "}
-          </div>
-          <div className="text-[16px] font-medium text-center">
-            <h1 className="text-[24px] mb-1 font-semibold">
-              🛍️ Sell, Create, Thrive{" "}
-            </h1>{" "}
-            A digital marketplace cooler than Etsy or Gumroad, a freelancer
-            section like Fiverr, and a course marketplace like Udemy—without the
-            outrageous fees.{" "}
-          </div>
-          <div className="text-[16px] font-medium text-center">
-            <h1 className="text-[24px] mb-1 font-semibold">
-              🙅‍♂️ Just the Good Stuff{" "}
-            </h1>{" "}
-            No mind-reading algorithms, no selling your info. Your data stays
-            yours—always. 🚀{" "}
-          </div>
-
-          <div className="text-[16px] font-medium  text-center">
-            <h1 className="text-[24px] mb-1 font-semibold">
-              Don’t Miss Out! We’re launching soon.{" "}
-            </h1>{" "}
-            Be there from Day 1! 👉 Join the Waitlist Now
-          </div>
-
-          <div className="flex gap-5 mt-10">
+          {/* Form */}
+          <div className="flex flex-col md:flex-row gap-5 items-center mt-10 w-full justify-center">
             <input
               type="text"
-              className="bg-white p-2 px-4 w-[300px]"
+              className="bg-white p-2 px-4 w-[300px] sm:w-full rounded-3xl"
               placeholder="Name"
-              style={{
-                border: "1px solid white",
-                borderRadius: "25px",
-              }}
             />
             <input
               type="text"
-              className="bg-white p-2 px-4 w-[300px]"
+              className="bg-white p-2 px-4 w-[300px] sm:w-full rounded-3xl"
               placeholder="Email"
-              style={{
-                border: "1px solid white",
-                borderRadius: "25px",
-              }}
             />
-            <button
-              style={{
-                border: "1px solid white",
-              }}
-              className="p-2 rounded-3xl bg-white px-5 text-black font-bold"
-            >
+            <button className="p-2 px-5 sm:w-full w-[300px] text-black font-bold bg-white rounded-3xl">
               Join Waitlist
             </button>
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+// @ts-ignore
+function Section({ title, description }) {
+  return (
+    <div className="text-center">
+      <h2 className="text-[20px] sm:text-[24px] font-semibold">{title}</h2>
+      <p className="text-[14px] sm:text-[16px]">{description}</p>
     </div>
   );
 }
